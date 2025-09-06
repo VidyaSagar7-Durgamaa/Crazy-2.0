@@ -1,27 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Welcome</title>
-    <style>
+<style>
         body {
-            background-color: #f0f8ff;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
-        }
-        h1 {
-            color: #2e8b57;
-            font-size: 3em;
-        }
-        p {
-            color: #555;
-            font-size: 1.5em;
-        }
-    </style>
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #2c5364, #f7971e, #ffd200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+.welcome-container {
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 24px;
+    padding: 50px 30px;
+    max-width: 600px;
+    width: 95%;
+    text-align: center;
+    animation: fadeIn 1.2s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+.welcome-title {
+    font-size: 2.5em;
+    color: #2c5364;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.welcome-message {
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 32px;
+}
+.code-section {
+    background: #f4f4f4;
+    border-radius: 12px;
+    padding: 18px 12px 12px 12px;
+    margin: 24px 0;
+    box-shadow: 0 2px 8px rgba(44, 83, 100, 0.08);
+    text-align: left;
+}
+.code-section h2 {
+    margin-top: 0;
+    color: #f7971e;
+    font-size: 1.1em;
+}
+pre {
+    background: #222;
+    color: #fff;
+    padding: 14px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.copy-btn {
+    background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 22px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+.copy-btn:hover {
+    background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+.welcome-btn {
+    background: linear-gradient(90deg, #0f2027 0%, #2c5364 100%);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 16px 44px;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 18px;
+    box-shadow: 0 4px 16px rgba(44, 83, 100, 0.15);
+    transition: background 0.3s, transform 0.2s;
+}
+.welcome-btn:hover {
+    background: linear-gradient(90deg, #2c5364 0%, #0f2027 100%);
+    transform: translateY(-3px) scale(1.04);
+}
+</style>
+    <meta charset="UTF-8">
+    <title>Grand Welcome Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS file link -->
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome!</h1>
-    <p>We are glad to see you here.</p>
+    <div class="welcome-container">
+        <div class="welcome-title">Welcome to the Grand Portal!</div>
+        <div class="welcome-message">
+            We’re delighted to have you here.<br>
+            Explore, learn, and enjoy your experience!
+        </div>
+        
+        <button class="welcome-btn" onclick="showThankYou()">Get Started</button>
+    </div>
+
+<script>
+    function showThankYou() {
+        alert('Thank you for visiting our website!');
+    }
+</script>
 </body>
 </html>
