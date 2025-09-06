@@ -1,3 +1,3 @@
 # Crazy-2.0
 <br>
-Trying to make AI.
+<h3>Trying to make AI.</h3>
