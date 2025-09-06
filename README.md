@@ -1,2 +1,3 @@
 # Crazy-2.0
-25+22
+<br>
+Trying to make AI.
